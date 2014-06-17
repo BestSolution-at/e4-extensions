@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/at.bestsolution.e4.extensions.feature_1.0.0.qualifier.jar" id="at.bestsolution.e4.extensions.feature" version="1.0.0.qualifier">
+      <category name="e4-extensions"/>
+   </feature>
+   <category-def name="e4-extensions" label="e4 extensions"/>
+</site>
