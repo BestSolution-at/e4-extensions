@@ -29,16 +29,16 @@
 		<module>../../bundles/at.bestsolution.e4.extensions.core.services</module>
 		<module>../../bundles/at.bestsolution.e4.extensions.lifecycle</module>
 		
-		<module>../at.bestsolution.persistence.runtime.feature</module>
-		<module>../at.bestsolution.persistence.runtime.updatesite</module>
+		<module>../at.bestsolution.e4.extensions.feature</module>
+		<module>../at.bestsolution.e4.extensions.updatesite</module>
 
 	</modules>
 
 	<repositories>
 		<repository>
-			<id>kepler</id>
+			<id>luna</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/luna</url>
 		</repository>
 	</repositories>
 
