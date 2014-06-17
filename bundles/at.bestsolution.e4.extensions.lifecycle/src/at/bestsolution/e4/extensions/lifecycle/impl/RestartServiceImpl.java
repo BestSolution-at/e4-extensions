@@ -70,4 +70,10 @@ public class RestartServiceImpl implements RestartService {
 		return false;
 	}
 	
+	@Override
+	public void evaluateClear() {
+		unscheduleClear();
+		System.getProperties().put(IWorkbench.CLEAR_PERSISTED_STATE, "true");
+	}
+	
 }

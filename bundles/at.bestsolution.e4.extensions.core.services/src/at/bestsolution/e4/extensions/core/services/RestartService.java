@@ -15,4 +15,5 @@ public interface RestartService {
 	public void unscheduleClear();
 	public boolean isClear();
 	public boolean restart(boolean clear);
+	public void evaluateClear();
 }

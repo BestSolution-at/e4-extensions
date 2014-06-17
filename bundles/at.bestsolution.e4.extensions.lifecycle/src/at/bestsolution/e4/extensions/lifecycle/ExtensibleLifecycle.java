@@ -10,7 +10,6 @@
  *******************************************************************************/
 package at.bestsolution.e4.extensions.lifecycle;
 
-import org.eclipse.e4.ui.workbench.IWorkbench;
 import org.eclipse.e4.ui.workbench.lifecycle.PostContextCreate;
 
 import at.bestsolution.e4.extensions.core.services.RestartService;
@@ -21,8 +20,7 @@ public class ExtensibleLifecycle {
 	@PostContextCreate
 	public void init(RestartService service) {
 		if( service.isClear() ) {
-			service.unscheduleClear();
-			System.getProperties().put(IWorkbench.CLEAR_PERSISTED_STATE, "true");
+			service.evaluateClear();
 		} else {
 			System.err.println("No clearance");
 		}
