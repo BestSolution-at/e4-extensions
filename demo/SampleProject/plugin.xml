@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="SampleProject"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/SampleProject/css/default.css">
+         </property>
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://at.bestsolution.e4.extensions.lifecycle/at.bestsolution.e4.extensions.lifecycle.ExtensibleLifecycle">
+         </property>
+         <property
+               name="appName"
+               value="SampleProject">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
